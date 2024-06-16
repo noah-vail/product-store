@@ -6,7 +6,6 @@
         :offset="[65, -61]"
         style="z-index: 2500"
       >
-        <!-- class="button-sticky" -->
         <q-btn fab color="primary-dark" unelevated
           ><i class="sticky-icon pi pi-shopping-cart"></i
         ></q-btn>
@@ -66,8 +65,9 @@
                 Purpose
               </p>
               <p class="paragraph merriweather-light">
-                This is
-                <a> <strong class="text-warning">some text</strong></a>
+                This is a mobile & desktop
+                <a> <strong class="text-warning">product store</strong></a>
+                website that sells graphics cards, desktops & laptops.
               </p>
               <p
                 class="merriweather-regular heading-secondary heading-secondary--frombottom"
@@ -75,15 +75,19 @@
                 Functionality
               </p>
               <p class="merriweather-light paragraph">
-                This is
-                <a> <strong class="text-warning">some text</strong></a>
+                Allows the user to
+                <a> <strong class="text-warning">add items</strong></a> to a
+                cart,
+                <a> <strong class="text-warning">purchase products</strong></a>
+                & view their
+                <a> <strong class="text-warning">order history</strong></a
+                >.
               </p>
             </div>
           </div>
         </q-card-section>
       </div>
     </q-card>
-
     <q-card class="build-card">
       <div
         class="merriweather-regular-italic heading-proj-details--main u-center-text"
@@ -107,7 +111,7 @@
                   Vue.js
                 </p>
                 <p class="merriweather-light paragraph">
-                  Version <a> <strong class="text-warning">1.2.3</strong></a>
+                  Version <a> <strong class="text-warning">^ 3.4.18</strong></a>
                 </p>
                 <p
                   class="merriweather-regular heading-secondary heading-secondary--fromleft"
@@ -115,7 +119,12 @@
                   Quasar Framework
                 </p>
                 <p class="merriweather-light paragraph">
-                  Version <a> <strong class="text-warning">1.2.3</strong></a>
+                  Version <a> <strong class="text-warning">^ 2.8.0</strong></a>
+                </p>
+                <p class="merriweather-light paragraph">
+                  Icons used from
+                  <strong class="text-warning">Font-Awesome</strong> &
+                  <strong class="text-warning">PrimeIcons</strong>
                 </p>
               </div>
             </div>
@@ -136,6 +145,10 @@
                 </p>
                 <p class="merriweather-light paragraph">
                   C# .Net <strong class="text-warning">8</strong>
+                </p>
+                <p class="merriweather-light paragraph">
+                  <strong class="text-warning">Swagger</strong> is used for
+                  hosting API
                 </p>
                 <p
                   class="merriweather-regular heading-secondary heading-secondary--fromright"
@@ -177,10 +190,18 @@
                 </p>
                 <p class="paragraph merriweather-light">
                   Using
-                  <a> <strong class="text-warning">Hash</strong></a>
-                  and
-                  <a> <strong class="text-warning">Salt</strong></a>
-                  for user password security.
+                  <a> <strong class="text-warning">Tokens</strong></a>
+                  to provide stronger password security by eliminating the need
+                  for users to repeatedly use login credentials
+                </p>
+                <p class="paragraph merriweather-light">
+                  <a>
+                    <strong class="text-warning"
+                      >Facilitates secure access</strong
+                    ></a
+                  >
+                  during website traversal, including initial logins and while
+                  connecting access protocols between applications.
                 </p>
               </div>
             </div>
@@ -188,49 +209,6 @@
         </div>
       </div>
     </q-card>
-
-    <q-card class="socials-card">
-      <div
-        class="merriweather-regular-italic heading-proj-details--main u-center-text"
-      >
-        Socials
-      </div>
-      <div class="socials-card__content">
-        <div class="row roww">
-          <q-card-section class="col">
-            <div class="feature-box">
-              <i class="icon pi pi-linkedin"></i>
-              <div
-                class="merriweather-regular heading-proj-details--sub u-center-text"
-              >
-                LinkedIn
-              </div>
-              <div>
-                <p class="merriweather-regular heading-secondary">
-                  Subheading 1
-                </p>
-              </div>
-            </div>
-          </q-card-section>
-          <q-card-section class="col">
-            <div class="feature-box">
-              <i class="icon pi pi-github"></i>
-              <div
-                class="merriweather-regular heading-proj-details--sub u-center-text"
-              >
-                GitHub
-              </div>
-              <div>
-                <p class="merriweather-regular heading-secondary">
-                  Subheading 3
-                </p>
-              </div>
-            </div>
-          </q-card-section>
-        </div>
-      </div>
-    </q-card>
-
     <q-card class="contact-card">
       <div
         class="merriweather-regular-italic heading-proj-details--main u-center-text"
@@ -249,7 +227,7 @@
               </div>
               <div>
                 <p class="merriweather-regular heading-secondary">
-                  Subheading 1
+                  n.c.vail21@gmail.com
                 </p>
               </div>
             </div>
@@ -260,27 +238,10 @@
               <div
                 class="merriweather-regular heading-proj-details--sub u-center-text"
               >
-                Resume
+                GitHub
               </div>
               <div>
-                <p class="merriweather-regular heading-secondary">
-                  Subheading 2
-                </p>
-              </div>
-            </div>
-          </q-card-section>
-          <q-card-section class="col">
-            <div class="feature-box">
-              <i class="icon fa-solid fa-link"></i>
-              <div
-                class="merriweather-regular heading-proj-details--sub u-center-text"
-              >
-                InDeed
-              </div>
-              <div>
-                <p class="merriweather-regular heading-secondary">
-                  Subheading 3
-                </p>
+                <p class="merriweather-regular heading-secondary">noah-vail</p>
               </div>
             </div>
           </q-card-section>
@@ -295,7 +256,6 @@
 
 <script>
 import { reactive, onMounted } from "vue";
-import InsertDriveFileIcon from "@quasar/extras/material-icons";
 export default {
   setup() {
     onMounted(() => {
