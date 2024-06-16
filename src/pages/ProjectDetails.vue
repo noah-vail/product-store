@@ -65,9 +65,9 @@
                 Purpose
               </p>
               <p class="paragraph merriweather-light">
-                This is a mobile & desktop
+                This is a mobile and desktop
                 <a> <strong class="text-warning">product store</strong></a>
-                website that sells graphics cards, desktops & laptops.
+                website that sells graphics cards, desktops and laptops.
               </p>
               <p
                 class="merriweather-regular heading-secondary heading-secondary--frombottom"
@@ -79,7 +79,7 @@
                 <a> <strong class="text-warning">add items</strong></a> to a
                 cart,
                 <a> <strong class="text-warning">purchase products</strong></a>
-                & view their
+                and view their
                 <a> <strong class="text-warning">order history</strong></a
                 >.
               </p>
@@ -123,7 +123,7 @@
                 </p>
                 <p class="merriweather-light paragraph">
                   Icons used from
-                  <strong class="text-warning">Font-Awesome</strong> &
+                  <strong class="text-warning">Font-Awesome</strong> and
                   <strong class="text-warning">PrimeIcons</strong>
                 </p>
               </div>
