@@ -1,0 +1,248 @@
+.heading-proj-details {
+  color: black;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+
+    animation-name: moveInTop;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.6rem;
+    padding-bottom: 2rem;
+    animation: moveInRight 1.3s ease-in-out;
+  }
+}
+
+.heading-primary {
+  color: black;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 3rem;
+
+    animation-name: moveInTop;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.6rem;
+    padding-bottom: 2rem;
+    animation: moveInRight 1.3s ease-in-out;
+  }
+
+  &--brandsCats {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+
+    animation-name: moveInTop;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &--subBrandsCats {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    padding-bottom: 2rem;
+    animation: moveInRight 1.3s ease-in-out;
+  }
+
+  &--sub-nospace {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    padding-bottom: 2rem;
+    animation: moveInRight 1.3s ease-in-out;
+  }
+}
+
+.heading-secondary {
+  background-image: linear-gradient(
+    to left bottom,
+    rgba($accent, 0.9),
+    rgba($primary, 0.9)
+  );
+
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  &--fromtop {
+    animation-name: moveInTop;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &--frombottom {
+    animation-name: moveInBottom;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &--fromleft {
+    animation-name: moveInLeft;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &--fromright {
+    animation-name: moveInRight;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.heading-secondary-large {
+  background-image: linear-gradient(
+    to left bottom,
+    rgba($accent, 0.9),
+    rgba($primary, 0.9)
+  );
+
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  &--fromtop {
+    animation-name: moveInTop;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &--frombottom {
+    animation-name: moveInBottom;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &--fromleft {
+    animation-name: moveInLeft;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &--fromright {
+    animation-name: moveInRight;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.heading-tertiary2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  //padding-bottom: 1rem;
+}
+
+.heading-tertiary-large {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.heading-tertiary-largest {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 412px) {
+  .heading-primary {
+    &--main {
+      padding: 0.2rem;
+      font-size: 3.2rem;
+      padding-bottom: 1.8rem;
+    }
+
+    &--sub {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    &--brandsCats {
+      font-size: 2.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .heading-secondary {
+    font-size: 1.5rem;
+  }
+
+  .heading-proj-details {
+    &--main {
+      font-size: 3.2rem;
+    }
+
+    &--sub {
+      font-size: 2rem;
+    }
+  }
+
+  .heading-tertiary {
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}

@@ -1,0 +1,468 @@
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 34rem;
+
+  &__side {
+    color: black;
+    height: 33rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 3rem rgba($color-black, 0.15);
+
+    &--front {
+      background-color: $color-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, $primary, $warning);
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $info-dark,
+          $secondary-dark
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $accent-dark,
+          $positive-dark
+        );
+      }
+
+      &-4 {
+        background-image: linear-gradient(
+          to right bottom,
+          $negative-dark,
+          $info-dark
+        );
+      }
+
+      &-5 {
+        background-image: linear-gradient(to right bottom, $info, $warning);
+      }
+
+      &-6 {
+        background-image: linear-gradient(to right bottom, $primary, $negative);
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0deg);
+  }
+
+  // Front Side Styling
+  &__picture {
+    background-size: cover;
+    height: 20rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    /* DESKTOPS */
+    &--1 {
+      background-image: linear-gradient(to right bottom, $primary, $accent),
+        url("../assets/img/CyberpowerPC.png");
+    }
+    &--3 {
+      background-image: linear-gradient(to right bottom, $primary, $accent),
+        url("../assets/img/Skytech Chronos Gaming PC.png");
+    }
+    &--2 {
+      background-image: linear-gradient(to right bottom, $primary, $accent),
+        url("../assets/img/OMEN Gaming PC.png");
+    }
+    &--4 {
+      background-image: linear-gradient(to right bottom, $positive, $primary),
+        url("../assets/img/AcerPredator.png");
+    }
+    /* Razer Maingear R1 PC */
+    &--5 {
+      background-image: linear-gradient(to right bottom, $accent-dark, $primary),
+        url("../assets/img/MaingearR1.png");
+    }
+    /* Maingear M1 PC */
+    &--6 {
+      background-image: linear-gradient(to right bottom, $secondary, $primary),
+        url("../assets/img/MaingearM1.png");
+    }
+
+    /* LAPTOPS */
+    /* ASUS ROG Zephyrus G14 Laptop */
+    &--7 {
+      background-image: linear-gradient(
+          to right bottom,
+          $negative,
+          $primary-dark
+        ),
+        url("../assets/img/AsusZephyrus.png");
+    }
+    /* Alienware M18 Gaming Laptop */
+    &--8 {
+      background-image: linear-gradient(
+          to right bottom,
+          $negative-dark,
+          $primary
+        ),
+        url("../assets/img/AlienwareM18.png");
+    }
+    /* Asus ROG Strix */
+    &--9 {
+      background-image: linear-gradient(
+          to right bottom,
+          $warning,
+          $primary-dark
+        ),
+        url("../assets/img/ASUS Laptop.png");
+    }
+    /* Acer Nitro 17 */
+    &--10 {
+      background-image: linear-gradient(to right bottom, $warning, $info-dark),
+        url("../assets/img/Acer Nitro 17 Gaming Laptop.png");
+    }
+    &--15 {
+      background-image: linear-gradient(
+          to right bottom,
+          $warning,
+          $primary-dark
+        ),
+        url("../assets/img/Alienware Gaming Laptop.png");
+    }
+
+    /* GRAPHICS CARDS */
+    &--11 {
+      background-image: linear-gradient(
+          to right bottom,
+          $primary-dark,
+          $secondary-dark
+        ),
+        url("../assets/img/ASUS TUF Gaming GeForce RTX 4080 OC.png");
+    }
+
+    &--12 {
+      background-image: linear-gradient(
+          to right bottom,
+          $primary-dark,
+          $accent-dark
+        ),
+        url("../assets/img/ASUS TUF GeForce RTX 4090 OC.png");
+    }
+
+    &--13 {
+      background-image: linear-gradient(
+          to right bottom,
+          $primary-dark,
+          $accent-dark
+        ),
+        url("../assets/img/Gaming GeForce RTX 4070 Ti.png");
+    }
+
+    &--14 {
+      background-image: linear-gradient(
+          to right bottom,
+          $primary-dark,
+          $accent-dark
+        ),
+        url("../assets/img/MsiGeForceRTX4070Ti.png");
+    }
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    color: $color-white;
+    position: absolute;
+    top: 11rem;
+    right: 2.2rem;
+    width: 88%;
+  }
+
+  &__heading-span {
+    padding: 0.5rem 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($negative, 0.95),
+        rgba($primary, 0.95)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($primary, 0.95),
+        rgba($secondary-dark, 0.95)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($accent, 0.95),
+        rgba($primary, 0.95)
+      );
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($negative-dark, 0.95),
+        rgba($info-dark, 0.95)
+      );
+    }
+
+    &--5 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($info-dark, 0.95),
+        rgba($warning, 0.95)
+      );
+    }
+  }
+
+  &__details {
+    padding: 1.2rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: $default-font-size;
+        padding: 0.8rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  // Back Side Styling
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 2rem;
+  }
+
+  &__specs {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__item-description {
+    color: $color-white;
+    font-size: $font-size-small;
+  }
+
+  &__back-title {
+    font-size: $default-font-card-back-title;
+    font-weight: 900;
+  }
+
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    // FUNCTIONALITY
+    height: auto;
+    border-radius: 5px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    width: 85vw;
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0deg);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+
+    &__details {
+      padding: 0.2rem 2.5rem;
+    }
+
+    // Front Side Styling
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 5rem 3rem 3rem 3rem;
+    }
+
+    &__specs {
+      margin-bottom: 3rem;
+    }
+
+    &__item-description {
+      font-size: $default-font-size;
+    }
+  }
+}
+
+.card2 {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 34rem;
+
+  &__side {
+    color: black;
+    max-height: 41rem;
+    width: 100%;
+    padding-top: 1rem;
+    transition: all 0.8s ease-in-out;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    //box-shadow: 0 0.5rem 1rem rgba($color-black, 0.05);
+
+    &--front {
+      background-color: aqua;
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  // Front Side Styling
+  &__picture {
+    background-size: cover;
+    height: 16rem;
+    max-width: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  &__heading {
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    width: 60%;
+  }
+
+  &__heading-span {
+    padding: 0.5rem 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($negative, 0.95),
+        rgba($primary, 0.95)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($primary, 0.95),
+        rgba($secondary-dark, 0.95)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($accent, 0.95),
+        rgba($primary, 0.95)
+      );
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($negative-dark, 0.95),
+        rgba($info-dark, 0.95)
+      );
+    }
+
+    &--5 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($info-dark, 0.95),
+        rgba($warning, 0.95)
+      );
+    }
+  }
+
+  &__details {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    ul {
+      list-style: none;
+      width: 60%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 0.7rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+}

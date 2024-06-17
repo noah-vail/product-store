@@ -1,0 +1,45 @@
+.form {
+  &__group {
+    align-items: center;
+  }
+
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    font-family: inherit;
+    color: inherit;
+    padding: 1rem;
+    width: 90%;
+    display: block;
+    transition: all 0.3s;
+    text-align: center;
+  }
+
+  &__label {
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 4rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__radio-group {
+    width: 50%;
+    display: inline-block;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .form {
+    &__label {
+      margin-left: 0.5rem;
+    }
+  }
+}

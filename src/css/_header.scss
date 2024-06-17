@@ -1,0 +1,341 @@
+/* HOME PAGE HEADER */
+.header {
+  height: 90vh;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  border-bottom-left-radius: $default-border-radius;
+  border-bottom-right-radius: $default-border-radius;
+
+  box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.75);
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($primary-dark, 0.9),
+    rgba($accent-dark, 0.9)
+  );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  &__logo {
+    height: 4rem;
+    border-radius: $defailt-img-radius;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/* ALL PRODUCTS PAGE HEADER */
+.header-warning-primary {
+  height: 90vh;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  border-bottom-left-radius: $default-border-radius;
+  border-bottom-right-radius: $default-border-radius;
+
+  box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.75);
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($warning, 0.9),
+    rgba($primary, 0.9)
+  );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  &__logo {
+    height: 4rem;
+    border-radius: $defailt-img-radius;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/* GRAPHICS CARD PAGE HEADING */
+.header-negative-info {
+  height: 90vh;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  border-bottom-left-radius: $default-border-radius;
+  border-bottom-right-radius: $default-border-radius;
+
+  box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.75);
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($negative-dark, 0.9),
+    rgba($info-dark, 0.9)
+  );
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  &__logo {
+    height: 4rem;
+    border-radius: $defailt-img-radius;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/* LAPTOPS PAGE HEADING */
+.header-secondary-accent {
+  height: 90vh;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  border-bottom-left-radius: $default-border-radius;
+  border-bottom-right-radius: $default-border-radius;
+
+  box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.75);
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($secondary, 0.9),
+    rgba($accent-dark, 0.8)
+  );
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  &__logo {
+    height: 4rem;
+    border-radius: $defailt-img-radius;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/* DESKTOPS PAGE HEADER */
+.header-accent-primary {
+  height: 90vh;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  border-bottom-left-radius: $default-border-radius;
+  border-bottom-right-radius: $default-border-radius;
+
+  box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.75);
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($accent-dark, 0.9),
+    rgba($primary, 0.9)
+  );
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  &__logo {
+    height: 4rem;
+    border-radius: $defailt-img-radius;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/* ALL PRODUCTS PAGE HEADER */
+.header-brands-categories {
+  height: 25vh;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: -0.5rem;
+
+  box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.75);
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($warning, 0.9),
+    rgba($primary, 0.9)
+  );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  &__logo {
+    height: 4rem;
+    border-radius: $defailt-img-radius;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .header {
+    height: 90vh;
+    width: 95vw;
+    margin-top: -0.5rem;
+
+    &__logo-box {
+      top: 1rem;
+      right: 1rem;
+    }
+
+    &__logo {
+      height: 2.5rem;
+    }
+  }
+
+  .header-brands-categories {
+    width: 95vw;
+
+    &__logo-box {
+      top: 1.5rem;
+      right: 1rem;
+    }
+
+    &__logo {
+      height: 2.5rem;
+    }
+
+    &__text-box {
+      top: 65%;
+    }
+  }
+
+  .header-warning-primary {
+    height: 90vh;
+    width: 95vw;
+    margin-top: -0.5rem;
+
+    &__logo-box {
+      top: 1rem;
+      left: 1rem;
+    }
+
+    &__logo {
+      height: 2.5rem;
+    }
+  }
+
+  .header-negative-info {
+    height: 90vh;
+    width: 95vw;
+    margin-top: -0.5rem;
+
+    &__logo-box {
+      top: 1rem;
+      left: 1rem;
+    }
+
+    &__logo {
+      height: 2.5rem;
+    }
+  }
+
+  .header-accent-primary {
+    height: 90vh;
+    width: 95vw;
+    margin-top: -0.5rem;
+
+    &__logo-box {
+      top: 1rem;
+      left: 1rem;
+    }
+
+    &__logo {
+      height: 2.5rem;
+    }
+  }
+
+  .header-secondary-accent {
+    height: 90vh;
+    width: 95vw;
+    margin-top: -0.5rem;
+
+    &__logo-box {
+      top: 1rem;
+      left: 1rem;
+    }
+
+    &__logo {
+      height: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,420 @@
+.pageBackground {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($primary-dark, 0.8),
+    rgba($secondary-dark, 0.8)
+  );
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+
+  &__content {
+    padding-top: 2rem;
+    background-color: $color-grey-light;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+
+  &__content2 {
+    background-color: $color-grey-light;
+    padding: 2rem;
+  }
+}
+
+.pageBackground2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($secondary-dark, 0.8),
+    rgba($primary-dark, 0.8)
+  );
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+
+  &__content {
+    padding-top: 4rem;
+    background-color: #fef4ef; //$color-grey-light;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  &__content-smalltop {
+    padding-top: 2rem;
+    background-color: #fef4ef; //$color-grey-light;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.pageBackground3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($primary-dark, 0.8),
+    rgba($secondary-dark, 0.8)
+  );
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.pageBackground-phone {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($primary, 0.5),
+    rgba($secondary, 0.5)
+  );
+  padding: 1rem;
+
+  &__content {
+    padding-top: 2rem;
+    background-color: $color-grey-light;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+
+  &__content2 {
+    background-color: $color-grey-light;
+  }
+}
+
+.sticky-icon {
+  font-size: $default-sticky-icon-size;
+}
+
+.icon {
+  font-size: $default-icon-size;
+  padding-bottom: 1rem;
+}
+
+.home {
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  width: 75vw;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: $default-border-radius !important;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.85);
+  background-color: whitesmoke;
+
+  &__discover-box {
+    height: 62rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1.2rem;
+  }
+
+  &__products-box {
+    width: 73vw;
+    height: 45.5rem;
+    background-color: $color-white;
+    border-radius: $default-border-radius !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: whitesmoke;
+
+    &--carousel {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      background-color: whitesmoke;
+    }
+
+    &--button {
+      text-align: right;
+      position: absolute;
+      top: 7.5rem;
+      right: 5rem;
+    }
+  }
+
+  &__graphics-box {
+    border-radius: $default-border-radius !important;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+    background-color: whitesmoke;
+    &--button {
+      text-align: right;
+      padding-right: 3rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__laptops-box {
+    border-radius: $default-border-radius !important;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+    background-color: whitesmoke;
+    &--button {
+      text-align: right;
+      padding-right: 3rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__desktops-box {
+    border-radius: $default-border-radius !important;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+    background-color: whitesmoke;
+    &--button {
+      text-align: right;
+      padding-right: 3rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.products {
+  width: 75vw;
+  margin: 0 auto;
+  border-radius: $default-border-radius;
+  padding-top: 1rem;
+  margin-top: 3rem;
+
+  box-shadow: 0 3rem 5rem rgba($color-black, 0.75);
+
+  &__container {
+    margin: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  &__btn {
+    text-align: right;
+  }
+}
+
+.outline-card {
+  margin: 0 auto;
+  width: 75vw;
+  border-radius: $default-border-radius;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+
+  box-shadow: 0 3rem 5rem rgba($color-black, 0.75);
+
+  padding: 1.5rem;
+
+  &--project-outline {
+    margin: 0.5rem;
+  }
+
+  &--box {
+    width: 100%;
+  }
+}
+
+.build-card {
+  margin: 0 auto;
+  width: 75vw;
+  border-radius: $default-border-radius !important;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  box-shadow: 0 3rem 5rem rgba($color-black, 0.75);
+
+  &__build-stack {
+    margin: 0.5rem;
+    border-radius: 25px;
+  }
+}
+
+.contact-card {
+  margin: 0 auto;
+  width: 75vw;
+  border-radius: $default-border-radius !important;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+
+  box-shadow: 0 3rem 5rem rgba($color-black, 0.75);
+
+  &__content {
+    margin: 0.5rem;
+  }
+}
+
+.socials-card {
+  margin: 0 auto;
+  width: 75vw;
+  border-radius: $default-border-radius !important;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  box-shadow: 0 3rem 5rem rgba($color-black, 0.75);
+
+  &__content {
+    margin: 0.5rem;
+  }
+}
+
+.qty-box {
+  min-width: 4vw;
+  margin-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.btn-box {
+  min-width: 10vw;
+  margin-left: 33%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1580px) {
+  .products {
+    width: 95vw;
+    margin: 0 auto;
+    padding-left: 0rem;
+    margin-left: -3.5rem;
+    margin-top: 3rem;
+
+    &__container {
+      padding-left: 0.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .pageBackground {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 0.6rem;
+  }
+
+  .pageBackground2 {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .home {
+    width: 95vw;
+    text-align: center;
+
+    &__products-box {
+      width: 90vw;
+      margin-left: -0.7rem;
+      padding-left: 0rem;
+      padding-top: 0rem;
+
+      &--button {
+        text-align: right;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    &__graphics-box {
+      width: 90vw;
+      margin-left: -0.7rem;
+      padding-left: 0rem;
+      padding-top: 0rem;
+
+      &--button {
+        text-align: right;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    &__laptops-box {
+      width: 90vw;
+      margin-left: -0.7rem;
+      padding-left: 0rem;
+      padding-top: 0rem;
+
+      &--button {
+        text-align: right;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    &__desktops-box {
+      width: 90vw;
+      margin-left: -0.7rem;
+      padding-left: 0rem;
+      padding-top: 0rem;
+
+      &--button {
+        text-align: right;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .outline-card {
+    width: 95vw;
+    margin-bottom: 1.5rem;
+
+    &--project-outline {
+      width: 100%;
+      margin: -1.2rem;
+    }
+  }
+
+  .build-card {
+    width: 95vw;
+    margin-bottom: 1.5rem;
+
+    &__build-stack {
+      width: 100%;
+      margin: -1.2rem;
+    }
+  }
+
+  .contact-card {
+    width: 95vw;
+    margin-bottom: 1.5rem;
+
+    &__content {
+      width: 100%;
+      margin: -1.2rem;
+    }
+  }
+
+  .socials-card {
+    width: 95vw;
+    margin-bottom: 1.5rem;
+
+    &__content {
+      width: 100%;
+      margin: -1.2rem;
+    }
+  }
+
+  .products {
+    width: 95vw;
+    margin-left: -0rem;
+    &__container {
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 0.4rem;
+    }
+  }
+
+  .qty-box {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-box {
+    min-width: 10vw;
+    margin-right: 2.4rem;
+    padding-top: 0.5rem;
+  }
+}
+
+// @media screen and (min-width: 1700px) {
+// }

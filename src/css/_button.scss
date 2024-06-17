@@ -1,0 +1,579 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    display: inline-block;
+    border-radius: $default-button-radius;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-button-text-large;
+
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($info, 0.3);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($info, 0.2);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-black;
+
+    &::after {
+      background-color: $color-grey-light-2;
+    }
+  }
+
+  &--orange {
+    background-color: $secondary;
+    color: $color-white;
+
+    &::after {
+      background-color: $secondary;
+    }
+  }
+
+  &--positive {
+    background-color: $positive;
+    color: $color-white;
+    margin: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--negative {
+    background-color: $negative;
+    color: $color-white;
+    margin: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--red {
+    background-color: $warning;
+    color: $color-white;
+    margin: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--accent {
+    background-color: $accent;
+    color: $color-white;
+    margin: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &-- &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btnsmall {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    width: 11rem;
+    display: inline-block;
+    border-radius: 2rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-button-text;
+
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($warning, 0.15);
+
+    &::after {
+      transform: scaleX(1.6) scaleY(1.8);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($info, 0.2);
+  }
+
+  &--positive {
+    background-color: $positive;
+    color: $color-white;
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--negative {
+    background-color: $negative;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--accent {
+    background-color: $accent;
+    color: $color-white;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--warning {
+    background-color: $warning;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--info {
+    background-color: $info;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+.btntiny {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: $default-button-radius;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 0.9rem;
+    width: 7vw;
+    min-width: 6vw;
+
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($info, 0.3);
+
+    &::after {
+      transform: scaleX(1.6) scaleY(1.8);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($info, 0.2);
+  }
+
+  &--positive {
+    background-color: $positive;
+    color: $color-white;
+    margin-left: -0.5rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--negative {
+    background-color: $negative;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--accent {
+    background-color: $accent;
+    color: $color-white;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--warning {
+    background-color: $warning;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--info {
+    background-color: $info;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+.button-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $primary;
+    padding: 0.5rem;
+    transition: all 0.2s;
+    border-radius: 6px;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($primary-dark, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($info, 0.15);
+    transform: translateY(0px);
+  }
+
+  &--white {
+    background-color: whitesmoke;
+    color: $color-grey-dark-1;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+.button-text-add {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $accent;
+    padding: 0.5rem;
+    transition: all 0.2s;
+    border-radius: 6px;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-grey-dark-3, 0.5);
+    transform: translateY(-0.2rem);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($accent, 0.15);
+    transform: translateY(0px);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $primary;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+.button-text-positive {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $positive;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $accent;
+    padding: 0.3rem;
+    transition: all 0.2s;
+    border-radius: 6px;
+  }
+
+  &:hover {
+    background-color: $positive;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($accent, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($info, 0.2);
+    transform: translateY(0px);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark-1;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-white;
+    color: $positive;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+.button-text2 {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $primary;
+    padding: 0.3rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(0px);
+  }
+}
+
+.button-sticky {
+  &:hover {
+    background-color: $primary;
+    color: $color-white;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+    transform: translateY(-0.5rem);
+    transition: all 0.2s;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .qty {
+    min-width: 8vw !important;
+  }
+
+  .btnsmall {
+    &,
+    &:link,
+    &:visited {
+      padding: 0.5rem 1.5rem;
+      margin-top: 1rem;
+      width: 100%;
+      font-size: $default-button-text;
+    }
+
+    &--positive {
+      margin-right: 1rem;
+      margin-left: 0rem;
+    }
+  }
+
+  .btntiny {
+    &,
+    &:link,
+    &:visited {
+      width: 30vw !important;
+      font-size: 0.8rem !important;
+    }
+
+    &--positive {
+      margin-left: -1rem !important;
+    }
+
+    &--negative {
+      margin-left: -0.2rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .btn {
+    &,
+    &:link,
+    &:visited {
+      padding: 0.5rem 2.5rem;
+    }
+  }
+
+  .button-sticky {
+    margin-right: -2rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .qty {
+    min-width: 8vw !important;
+  }
+  .btnsmall {
+    &,
+    &:link,
+    &:visited {
+      padding: 0.4rem 1.5rem;
+      margin-top: 1rem;
+      width: 100%;
+      font-size: $default-button-text;
+    }
+
+    &--positive {
+      margin-left: -0.6rem;
+    }
+
+    &--negative {
+      margin-left: -1.3rem;
+    }
+
+    &--accent {
+      margin-left: 0.4rem;
+    }
+
+    &--warning {
+      margin-left: 0.4rem;
+    }
+  }
+
+  .btntiny {
+    &--positive {
+      margin-left: -1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .btntiny {
+    &,
+    &:link,
+    &:visited {
+      padding: 0.5rem 1rem;
+      width: 100%;
+      font-size: 0.8rem;
+    }
+
+    &--positive {
+      margin-left: -0.1rem;
+    }
+  }
+
+  .btnsmall {
+    &,
+    &:link,
+    &:visited {
+      padding: 0.8rem 1.5rem;
+      margin-top: 1rem;
+      font-size: $default-button-text;
+    }
+
+    &--accent {
+      margin-left: 0.4rem;
+    }
+
+    &--warning {
+      margin-left: 0.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .qty {
+    width: 5vw !important;
+  }
+
+  .btntiny {
+    &,
+    &:link,
+    &:visited {
+      padding: 0.5rem 1rem;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    &--positive {
+      margin-left: 0.1rem;
+    }
+  }
+}
